@@ -21,26 +21,6 @@ export default class About extends Component {
                               My name is Calin Dodon, I am studying Computer Science at Polytechnical University of Bucharest, currently in the 
                                 4th year. I like Web Development and all my free time is devoted to this field of technology.
                             </p>
-
-                            <div className='social-media'>
-                                <ul className='nav-list'>
-                                    <li>
-                                        <a href='#' className='icon-link'>
-                                            <i className='fab fa-facebook-square'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#' className='icon-link'>
-                                            <i className='fab fa-twitter-square'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#' className='icon-link'>
-                                            <i className='fab fa-dribbble-square'></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         
                     </div>

@@ -11,10 +11,6 @@ html {
 body {
   width: 100%;
   height: 100%;
-  /* background: url('images/sitebg.jpg') no-repeat center fixed; */
-  /* background: #501b1d; */
-  /* background: #64485c; */
-  /* background: #83677b; */
   background: white;
   background-size: cover;
 }
@@ -86,133 +82,201 @@ img {
 
 @media screen and (max-width: 600px) {
     .full-screen-video-container {
-        margin-left: 4.1rem;
-        width: 113vw !important;
+        margin-left: -1rem;
+        width: 116vw !important;
+        overflow-x: hidden !important;
+
     }
     #typed-strings {
+        margin-left: 5.9rem;
         width: 90vw;
+        overflow-x: hidden !important;
+
     }
     #about {
-        width: 95.4%;
-        margin-top: 1.3rem;
+        position: relative !important;
+        left: -1.7rem;
+        width: 117%;
+        margin-top: 1.57rem;
+        margin-left: 1.7rem;
+        overflow-x: hidden !important;
+
+
     }
     .about-heading {
         width: 95%;
         margin-left: 3%;
+        overflow-x: hidden !important;
+
     }
     .about-details {
-        width: 99%;
+        width: 93%;
         margin-top: 1rem;
+        overflow-x: hidden !important;
     }
     .about-details p {
         font-size: 1.6rem;
+        margin-left: 1.8rem;
+        position: relative;
+        bottom: 5rem;
+        overflow-x: hidden !important;
+
       }
     .skills {
-        width: 95.4% !important;
+        position: relative !important;
+        left: -1.7rem !important;
+        width: 117% !important;
+        margin-top: 0.03rem;
+        margin-left: 1.7rem;
+        overflow-x: hidden !important;
+
+    }
+    .skill {
+        overflow-x: hidden !important;
     }
     .portfolio {
-        width: 95.4% !important;
+        width: 117% !important;
+        position: relative;
+        left: -1.7rem !important;
+        margin-left: 1.7rem;
+        margin-top: -0.03rem;
+        overflow-x: hidden !important;
+
     }
     
     .contact {
-        width: 95.5% !important;
+        position: relative;
+        left: -1.7rem !important;
+        width: 117% !important;
+        margin-left: 1.7rem;
+        margin-top: 0.01rem;
+        overflow-x: hidden !important;
+
     }
     .synth-img img {
-        border: 2px solid red;
         position: relative;
-        margin-left: 2.5rem;
-        width: 90% !important;
+        margin-left: 3.07rem;
+        width: 87.7% !important;
+        overflow-x: hidden !important;
     }
     #ecomm-container img {
         position: relative;
-        margin-left: 5rem;
-        width: 90% !important;
+        margin-left: 5.57rem;
+        width: 87.5% !important;
+        overflow-x: hidden !important;
     }
     .chat-room-img img {
-        margin-left: 5rem;
-        width: 90% !important;
+        margin-left: 5.59rem;
+        width: 87.67% !important;
+        overflow-x: hidden !important;
     }
     #nav-icon3 {
         position: relative;
-        left: 20rem;
+        left: 22.7rem;
         bottom: 5rem;
         z-index: 99999;
         width: 50px !important;
         height: 10px !important;
         display: block !important;
+        /* overflow-x: hidden !important; */
+
     }
     body {
-        width: 100 !important;
+        /* width: 388px !important; */
         overflow-x: hidden !important;
     }
-  .nav-list {
+    .nav-list {
       position: relative;
-      bottom: 11.7rem;
-      left: 1.67rem;
+      bottom: 12.04rem;
+      left: .1rem;
       height: 0rem !important;
       background-color: rgba(8,146,208,0.5);
-      overflow: hidden;
-      width: 91.6vw !important;
+      overflow: hidden !important;
+      width: 116vw !important;
       transition: height 460ms;
+
   }
   .nav-list li {
       position: relative;
       top: 0.3rem;
+      overflow-x: hidden !important;
+
   }
   .nav-link:hover,
   .nav-link:focus {
     background-color: rgb(36, 33, 33) !important;
+    overflow-x: hidden !important;
   }
   .nav-link:after {
     background: none repeat scroll 0 0 #e7e8e9 !important;
+    overflow-x: hidden !important;
   }
   .non-zero-height {
       height: 39rem !important;
+      overflow-x: hidden !important;
   }
   .displayNone {
     display: none;
+    overflow-x: hidden !important;
   }
- 
   .menu-toggler {
       top: 2rem;
       right: 2rem;
+      overflow-x: hidden !important;
   }
   .landing-text h1 {
       font-size: 8rem;
+      overflow-x: hidden !important;
+
   }
   .landing-text h5 {
       font-size: 1.4rem;
+      overflow-x: hidden !important;
   }
   .nav-link {
       font-size: 3.5rem;
+      overflow-x: hidden !important;
   }
   .about .container {
       flex-direction: column;
+      overflow-x: hidden !important;
   }
   .profile-img {
       margin:  0 0 7rem 0;
       position: relative;
-      left: 3rem;
+      left: 2.5rem;
+      overflow-x: hidden !important;
     }
-  .portfolio-item {
+   .portfolio-item {
       flex-direction: column;
+      overflow-x: hidden !important;
+
   }
   .portfolio-img {
       margin: 0 0 2rem 0;
       order: 1;
+      overflow-x: hidden !important;
+
   }
   .portfolio-description {
       margin: 0;
       order: 2;
+      overflow-x: hidden !important;
+
   }
   .timeline p {
       font-size: 1.6rem;
+      overflow-x: hidden !important;
+
   }
   .timeline .date::before {
       font-size: 1.4rem;
+      overflow-x: hidden !important;
+
   }
   form {
       width: 100%;
+      overflow-x: hidden !important;
   }
 }
 

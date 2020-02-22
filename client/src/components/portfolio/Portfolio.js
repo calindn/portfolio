@@ -63,7 +63,7 @@ export default class Portfolio extends Component {
                                 Implemented with React, Node, Socket.io
                             </p>
                             <div className='details'>
-                                <a href='https://github.com/calind41/DigitalAudioSynthesizer' target='_blank'><FontAwesomeIcon className='github' icon={faGithub} /></a>
+                                <a href='https://github.com/calind41/chat-app-socketio' target='_blank'><FontAwesomeIcon className='github' icon={faGithub} /></a>
                                 <a href='https://socketio-chat-app.netlify.com' target='_blank'><FontAwesomeIcon className='link' icon={faLink} /></a>
                             </div>
                         </div>

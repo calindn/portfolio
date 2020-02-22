@@ -5,7 +5,6 @@ import './Intro.css';
 import bg_video from './clouds2.mp4';
 import { slide as Menu } from 'react-burger-menu'
 
-// import bg_video from './upview.mp4';
 let openMenu = false;
 export default class Intro extends Component {
     constructor(props) {
@@ -28,7 +27,8 @@ export default class Intro extends Component {
         console.log('handleClick called')
     }
     scrollDown = (elem) => {
-        console.log('scrollDown called');
+        $('.nav-list').removeClass("non-zero-height");
+        $('#nav-icon3').toggleClass('open');
         let selector = elem.target.href.substring(elem.target.href.indexOf('#'));
         let maxValue = document.querySelector(selector).getBoundingClientRect().top + window.scrollY - 100;
         $('html, body').animate({
@@ -44,9 +44,9 @@ export default class Intro extends Component {
 
         
         $(document).ready(function(){
-            $('#nav-icon3').click(function(){
+            $('#nav-icon3').unbind('click').bind('click', function(){
                 console.log('called ');
-                if (openMenu) {
+                if ($('.nav-list').hasClass('non-zero-height') === true) {
                     $('.nav-list').removeClass("non-zero-height");
                     $('#typed-strings').removeClass("displayNone");
                     openMenu = false;
@@ -68,10 +68,6 @@ export default class Intro extends Component {
                             <source src={bg_video} type='video/mp4' />
                         </video>
                     </div>
-                    <div onClick={(e) => {
-                        this.clickMenu(e);
-                    }} className={this.state.openClass + ' menu-toggler'}>
-                    </div>
                     <div id="nav-icon3">
                         <span></span>
                         <span></span>
@@ -91,7 +87,7 @@ export default class Intro extends Component {
                             <li>
                                 <a onClick={(e) => {this.handleClick()
                                                     this.scrollDown(e)}
-                                                    } href='#services' className='nav-link'>Skills</a>
+                                                    } href='#skills' className='nav-link'>Skills</a>
                             </li>
                             <li>
                                 <a onClick={(e) => {
@@ -125,12 +121,9 @@ export default class Intro extends Component {
     }
 }
 
-// console.log('log ',$(window).width());
-
 const styledObj = {
     fontSize: $(window).width() > 600 ? '5rem' : '3rem',
     position: 'relative',
-    // top: '23rem'
 }
 
 const styleTopNav = {
