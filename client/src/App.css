@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif !important;
+}
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  /* background: url('images/sitebg.jpg') no-repeat center fixed; */
+  /* background: #501b1d; */
+  /* background: #64485c; */
+  /* background: #83677b; */
+  background: white;
+  background-size: cover;
+}
+section {
+  padding: 6rem 0;
+}
+a {
+  text-decoration: none;
+  color: #eee;
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+img {
+  width: 100%;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  body {
+      /* background: url('images/sitebg2.jpg') no-repeat center fixed; */
+      background-size: cover;
+  }
+  .landing-text h1 {
+      font-size: 15rem;
+  }
+  .landing-text h5 {
+      font-size: 1.7rem;
+  }
+  .nav-list {
+      flex-direction: column;
+  }
+  .nav-list li {
+      margin: 2rem 0;
+  }
+  .nav-link {
+      font-size: 4.5rem;
+  }
+  .about-heading h1 {
+      font-size: 8rem;
+  }
+  .section-heading h1 {
+      font-size: 3rem;
+  }
+  .about-details .nav-list {
+      flex-direction: initial;
+  }
+  .about-details li {
+      margin: 0 2rem;
+  }
+  .icon-container {
+      width: 7rem;
+      height: 7rem;
+  }
+  .icon-container i {
+      font-size: 4rem;
+  }
+  .timeline ul {
+      margin: 0 0 0 auto;
+  }
+  .timeline .date::before {
+      left: -20rem;
+  }
+  .timeline .date::after {
+      left: -5.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .full-screen-video-container {
+        
+        width: 92vw !important;
+    }
+    #typed-strings {
+        width: 90vw;
+    }
+    #about {
+        width: 95.4%;
+        margin-top: 1.3rem;
+    }
+    .about-heading {
+        width: 95%;
+        margin-left: 3%;
+    }
+    .about-details {
+        width: 99%;
+        margin-top: 1rem;
+    }
+    .about-details p {
+        font-size: 1.6rem;
+      }
+    .skills {
+        width: 95.4% !important;
+    }
+    .portfolio {
+        width: 95.4% !important;
+    }
+    
+    .contact {
+        width: 95.5% !important;
+    }
+    .synth-img img {
+        border: 2px solid red;
+        position: relative;
+        margin-left: 2.5rem;
+        width: 90% !important;
+    }
+    #ecomm-container img {
+        position: relative;
+        margin-left: 5rem;
+        width: 90% !important;
+    }
+    .chat-room-img img {
+        margin-left: 5rem;
+        width: 90% !important;
+    }
+    #nav-icon3 {
+        position: relative;
+        left: 20rem;
+        bottom: 5rem;
+        z-index: 99999;
+        width: 50px !important;
+        height: 10px !important;
+        display: block !important;
+    }
+    body {
+        width: 100 !important;
+        overflow-x: hidden !important;
+    }
+  .nav-list {
+      position: relative;
+      bottom: 11.7rem;
+      left: 1.67rem;
+      height: 0rem !important;
+      background-color: rgba(8,146,208,0.5);
+      overflow: hidden;
+      width: 91.6vw !important;
+      transition: height 460ms;
+  }
+  .nav-list li {
+      position: relative;
+      top: 0.3rem;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: rgb(36, 33, 33) !important;
+  }
+  .nav-link:after {
+    background: none repeat scroll 0 0 #e7e8e9 !important;
+  }
+  .non-zero-height {
+      height: 39rem !important;
+  }
+  .displayNone {
+    display: none;
+  }
+ 
+  .menu-toggler {
+      top: 2rem;
+      right: 2rem;
+  }
+  .landing-text h1 {
+      font-size: 8rem;
+  }
+  .landing-text h5 {
+      font-size: 1.4rem;
+  }
+  .nav-link {
+      font-size: 3.5rem;
+  }
+  .about .container {
+      flex-direction: column;
+  }
+  .profile-img {
+      margin:  0 0 7rem 0;
+      position: relative;
+      left: 3rem;
+    }
+  .portfolio-item {
+      flex-direction: column;
+  }
+  .portfolio-img {
+      margin: 0 0 2rem 0;
+      order: 1;
+  }
+  .portfolio-description {
+      margin: 0;
+      order: 2;
+  }
+  .timeline p {
+      font-size: 1.6rem;
+  }
+  .timeline .date::before {
+      font-size: 1.4rem;
+  }
+  form {
+      width: 100%;
+  }
+}
+

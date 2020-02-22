@@ -1,0 +1,135 @@
+.portfolio {
+  position: relative;
+  width: 94vw;
+  left: 3vw;
+  bottom: 4.5rem;
+  background-color: #eee;
+}
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    color: rgb(7, 6, 6);
+  }
+  .portfolio-item:last-child {
+    margin-bottom: 0;
+  }
+  .portfolio-img {
+    flex: 1;
+    width: 50rem;
+  }
+  .portfolio-img img {
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+  }
+  .portfolio-img img:hover {
+    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+    filter: blur(0px);
+
+  }
+ 
+  .portfolio-description {
+    flex: 1;
+  }
+  .portfolio-description p {
+    font-size: 1.6rem;
+  }
+  .portfolio-description h5 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: .3;
+    color: #0892d0;
+  }
+  .portfolio-description h1 {
+    font-size: 3.4rem;
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+  .portfolio-description .cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3882ff;
+    transition: color 650ms;
+  }
+  .portfolio-description .cta:hover {
+    color: #2f67cd;
+  }
+/* ------------------------------------ */
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  height: 10%;
+  margin: 0 auto;
+  position: relative;
+}
+.section-heading {
+  text-align: center;
+  color: rgb(43, 41, 41);
+  margin-bottom: 10rem;
+}
+.section-heading h1 {
+  font-size: 4.5rem;
+  color: #add8e6;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.section-heading h1::before,
+.section-heading h1::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #add8e6;
+}
+.section-heading h1::before {
+  width: 14rem;
+  height: 3px;
+  border-radius: .8rem;
+}
+.section-heading h1::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  bottom: -1rem;
+}
+.section-heading h5 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.has-margin-right {
+  margin-right: 5rem;
+}
+
+/* .details {
+  border: 2px solid purple;
+  height: 5rem;
+} */
+.details .github {
+  color: #0892d0;
+  font-size: 3rem;
+  position: relative;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.details .github:hover, 
+.details .link:hover {
+  color: rgba(8,146,208,0.7);
+  
+}
+.details .link {
+  color: #0892d0;
+  font-size: 3rem;
+  margin-top: 1rem;
+  position: relative;
+}
