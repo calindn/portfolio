@@ -77,7 +77,7 @@ export default class Intro extends Component {
                     <nav style={styleTopNav} className='top-nav' >
                         <ul className='nav-list'>
                             <li>
-                                <a onClick={() => this.handleClick()} href='index.html' className='nav-link'>Home</a>
+                                <a onClick={() => this.handleClick()} href='https://pdfhost.io/v/5~sLEgLM_CVCalinDodonpdf.pdf' target='_blank' className='nav-link'> CV</a>
                             </li>
                             <li>
                                 <a onClick={(e) => {this.handleClick()
