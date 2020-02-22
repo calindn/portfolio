@@ -86,8 +86,8 @@ img {
 
 @media screen and (max-width: 600px) {
     .full-screen-video-container {
-        
-        width: 92vw !important;
+        margin-left: 4.1rem;
+        width: 113vw !important;
     }
     #typed-strings {
         width: 90vw;
